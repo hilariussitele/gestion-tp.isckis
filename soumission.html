@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soumission du TP</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<section>
+    <style>
+        body {
+            background-image: url(images/Bienvenue.jpg);
+        }
+    </style>
+</section>
+<header>
+    <h1>Soumission des travaux pratiques</h1>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="tp.html">Travaux pratiques</a>
+    <a href="enseignants.html">Enseignants</a>
+    <a href="soumission.html">Soumission</a>
+    <a href="a_propos.html">À propos</a>
+</nav>
+
+<main>
+    <form action="index.HTML" method="get">
+        <section>
+            <h2>Formulaire de Soumission</h2>
+            <form>
+        <label>Nom :</label>
+        <input type="text" name="nom" required>
+
+        <label>Post-nom :</label>
+        <input type="text" name="postnom" required>
+
+        <label>Promotion :</label>
+        <input type="text" name="promotion" required>
+
+        <label>TP :</label>
+        <select name="tp" required>
+            <option value="">-- Sélectionner un TP --</option>
+            <option value="TP1">TP1 - Programmation Web 1</option>
+            <option value="TP2">TP2 - M.A.I 1</option>
+            <option value="TP3">TP3 - Éthique et Déontologie</option>
+            <option value="TP4">TP4 - Programmation Mobile</option>
+            <option value="TP5">TP5 - Anglais</option>
+            
+        </select>
+
+        <label>Email de l'enseignant :</label>
+        <input type="email" name="email_enseignant" required>
+
+        <label>Fichier du TP :</label>
+        <input type="file" name="fichier_tp" required>
+
+        <button type="submit" class="btn">Soumettre</button>
+        <button type="reset" class="btn-reset">Annuler</button>
+        </form>
+        </section>
+    </form>
+</main>
+<div id="messageConfirmation" style="display:none;"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
